@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 
-flex-container {
+.flex-container {
   display: flex;
 }
 
-master-container {
+.master-container {
   max-width: 1440px;
   min-width: 360px;
+  background-color: blue;
+  font-size: 100px;
+  margin: auto;
 }
