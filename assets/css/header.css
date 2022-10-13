@@ -51,8 +51,16 @@ header .search-button {
   header .container {
     
   }
+
+  div.logo_search-bar {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+  }
   
   header .logo {
+    margin-right: 32px;
   }
   
   header .login-link {
@@ -62,6 +70,11 @@ header .search-button {
   }
   
   header .search-bar {
+    display: block;
+    width: 272px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 20px;
   }
   
   header .search-button {
@@ -76,6 +89,10 @@ header .search-button {
   }
   header .container {
     
+  }
+
+  div.logo_search-bar {
+    margin-right: auto;
   }
   
   header .logo {
