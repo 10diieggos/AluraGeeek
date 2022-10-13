@@ -1,0 +1,95 @@
+header {
+  height: 70px;
+}
+header * {
+  border: dashed 1px #ddd;
+}
+header .container {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  line-height: 100%;
+  border: 1px solid red;
+}
+
+header .logo {
+  width: 100px;
+  height: 28px;
+}
+
+header .login-link {
+  border: 1px #2A7AE4 solid;
+  width: 36%;
+  max-width: 166px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+header .login-link:visited {
+  color: #2A7AE4;
+}
+
+header .search-bar {
+  display: none;
+}
+
+header .search-button {
+  background-color: white;
+  border: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  header * {
+  }
+  header .container {
+    
+  }
+  
+  header .logo {
+  }
+  
+  header .login-link {
+  }
+  
+  header .login-link:visited {
+  }
+  
+  header .search-bar {
+  }
+  
+  header .search-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+  }
+  header * {
+  }
+  header .container {
+    
+  }
+  
+  header .logo {
+  }
+  
+  header .login-link {
+    max-width: 182px;
+  }
+  
+  header .login-link:visited {
+  }
+  
+  header .search-bar {
+  }
+  
+  header .search-button {
+  }
+}
