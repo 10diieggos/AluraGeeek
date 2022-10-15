@@ -1,0 +1,89 @@
+div.banner {
+  position: relative;
+}
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-banner {
+  position: absolute;
+  top: 40%;
+  width: 90%;
+  margin: 0 16px;
+  color: white;
+}
+
+.text-banner h1 {
+  width: 328px;
+  height: 26px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.text-banner h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 25px;
+}
+
+.verConsoles-link,
+.verConsoles-link:visited {
+  padding: 12px 16px;
+  width: 119px;
+  height: 40px;
+  background: #2A7AE4;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-banner {
+    margin: 0 0 0 32px;
+  }
+
+  .text-banner h1 {
+    width: 704px;
+    height: 61px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    margin-bottom: 16px;
+  }
+  
+  .text-banner h2 {
+    width: 704px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .text-banner {
+    top: 10%;
+    margin: 0 152px;
+  }
+
+  .text-banner h1 {
+    width: 751px;
+    height: 61px;    
+  }
+  
+  .text-banner h2 {
+    width: 704px;
+    height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .text-banner {
+    top: 40%;
+  }
+}
