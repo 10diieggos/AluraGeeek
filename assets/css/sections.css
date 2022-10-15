@@ -1,0 +1,71 @@
+div.sections {
+  flex-direction: column;
+}
+
+section.container {
+  width: 100%;
+  padding: 16px 8px;
+}
+
+div.star_wars-section {
+  width: 100%;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+div.verTudo {
+  padding: 0 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.verTudo h3 {
+  width: 101px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #464646;
+}
+
+div.verTudo a {
+padding-right: 20px;
+font-weight: 700;
+font-size: 14px;
+color: #2A7AE4;
+background-image: url('../img/blue_arrow.svg');
+background-repeat: no-repeat;
+background-position: right top;
+}
+
+figure.product {
+  margin: 8px;
+}
+
+figure.product img {
+  width: 156px;
+}
+
+figure.product figcaption {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #464646;
+  margin-top: 8px;
+}
+
+p.preco {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+  margin: 8px 0;
+}
+
+figure.product a{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2A7AE4;
+}
+
