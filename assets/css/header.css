@@ -36,6 +36,12 @@ header .search-bar {
   height: 40px;
   background: #F5F5F5;
   border-radius: 20px;
+  padding: 0 16px;
+  background-color: #F5F5F5;
+  background-image: url('../img/Icone-lupa-gray.svg');
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: center;
 }
 
 header .search-button {
