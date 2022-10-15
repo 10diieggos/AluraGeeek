@@ -1,15 +1,12 @@
 header {
   height: 70px;
 }
-header * {
-  border: dashed 1px #ddd;
-}
+
 header .container {
   justify-content: space-around;
   align-items: center;
   height: 100%;
   line-height: 100%;
-  border: 1px solid red;
 }
 
 header .logo {
@@ -23,7 +20,6 @@ header .login-link {
   max-width: 166px;
   height: 40px;
   line-height: 40px;
-  font-weight: 600;
   font-size: 14px;
   text-align: center;
   color: #2A7AE4;
@@ -35,6 +31,11 @@ header .login-link:visited {
 
 header .search-bar {
   display: none;
+  width: 100%;
+  border: 0;
+  height: 40px;
+  background: #F5F5F5;
+  border-radius: 20px;
 }
 
 header .search-button {
@@ -44,19 +45,18 @@ header .search-button {
 
 @media only screen and (min-width: 768px) {
   header {
-    justify-content: space-between;
+    height: 115px;
   }
-  header * {
-  }
+
   header .container {
-    
+    justify-content: space-around;
   }
 
   div.logo_search-bar {
-    width: 50%;
-    justify-content: center;
+    width: 100%;
+    justify-content: start;
     align-items: center;
-    margin-right: 10%;
+    margin-left: 10%;
   }
   
   header .logo {
@@ -64,17 +64,10 @@ header .search-button {
   }
   
   header .login-link {
+    margin: 0 10%;
   }
-  
-  header .login-link:visited {
-  }
-  
   header .search-bar {
     display: block;
-    width: 272px;
-    height: 40px;
-    background: #F5F5F5;
-    border-radius: 20px;
   }
   
   header .search-button {
@@ -83,31 +76,12 @@ header .search-button {
 }
 
 @media only screen and (min-width: 992px) {
-  header {
-  }
-  header * {
-  }
-  header .container {
-    
-  }
-
-  div.logo_search-bar {
-    margin-right: auto;
-  }
-  
   header .logo {
+    width: 176px;
+    height: 50px;
   }
   
   header .login-link {
     max-width: 182px;
-  }
-  
-  header .login-link:visited {
-  }
-  
-  header .search-bar {
-  }
-  
-  header .search-button {
   }
 }
