@@ -30,6 +30,7 @@ div.footer {
 
 .contact-form {
   width: 100%;
+  max-width: 434px;
 }
 
 div.footer fieldset {
@@ -130,4 +131,55 @@ div.contactMessage label {
   line-height: 19px;
   text-align: center;
   color: #464646;
+}
+
+@media only screen and (min-width: 700px) {
+  div.footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+    align-items: flex-start;
+  }
+
+  .nav-footer {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  div.footer {
+    padding: 64px 0;
+    justify-content: space-evenly;
+  }
+  .logo-nav {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .contact-form {
+    width: 40%;
+    max-width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  div.footer {
+    padding: 64px 0;
+    justify-content: space-evenly;
+  }
+  .logo-nav {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .contact-form {
+    width: 40%;
+    max-width: 40%;
+  }
 }
