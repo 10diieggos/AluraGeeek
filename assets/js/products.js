@@ -11,7 +11,7 @@ fetch('./assets/js/banco_dados.json')
         if (product.section === section) {
           let a = document.createElement('a');
           a.href = ''
-          a.setAttribute('aria-labelledby',`product${product.id}`)
+          a.setAttribute('aria-labelledby', `product${product.id}`)
           a.innerHTML = `<figure class="product">
                               <img src="./assets/img/${product.image}" alt="">
                               <figcaption id="product${product.id}">
@@ -24,41 +24,35 @@ fetch('./assets/js/banco_dados.json')
         }
       });
     });
+  }).then(function () {
+    let productsElements = document.querySelectorAll('.product')
+
+    function media_max_800(media) {
+      if (query_max_800.matches) {
+        // if screen size is smaller than 801px
+
+        for (let i = 4; i < productsElements.length; i = i + 6) {
+          productsElements[i].parentElement.classList.add('displayNone')
+          productsElements[i+1].parentElement.classList.add('displayNone')
+        }
+      }
+    }
+
+    var query_max_800 = window.matchMedia("(max-width: 800px)")
+    media_max_800(query_max_800)
+    query_max_800.addEventListener('change', media_max_800)
+
+    function media_min_801(media) {
+      if (query_min_801.matches) {
+        // if screen size is larger than 800px
+        productsElements.forEach(element => {
+          element.parentElement.classList.remove('displayNone')
+        })
+      }
+    }
+
+    var query_min_801 = window.matchMedia("(min-width: 801px)")
+    media_min_801(query_min_801)
+    query_min_801.addEventListener('change', media_min_801)
   });
 
-
-/* star_wars-section */
-
-/*<a href="" aria-labelledby="">
-    <figure class="product">
-    <img src="./assets/img/caneca-capacete.svg" alt="">
-    <figcaption id="">Produto XYZ <span class="hideVisually">por R$60,00</span></figcaption>
-    <p class="preco">R$ 60,00</p>
-    <a href="">Ver produto</a>
-  </figure>
-  </a>
-  
-  <a href="" aria-labelledby="">
-    <figure class="product">
-    <img src="./assets/img/caneca-capacete.svg" alt="">
-    <figcaption id="">Produto XYZ <span class="hideVisually">por R$60,00</span></figcaption>
-    <p class="preco">R$ 60,00</p>
-    <a href="">Ver produto</a>
-  </figure>
-  </a>
-  <a href="" aria-labelledby="">
-    <figure class="product">
-    <img src="./assets/img/caneca-capacete.svg" alt="">
-    <figcaption id="">Produto XYZ <span class="hideVisually">por R$60,00</span></figcaption>
-    <p class="preco">R$ 60,00</p>
-    <a href="">Ver produto</a>
-  </figure>
-  </a>
-  <a href="" aria-labelledby="">
-    <figure class="product">
-    <img src="./assets/img/caneca-capacete.svg" alt="">
-    <figcaption id="">Produto XYZ <span class="hideVisually">por R$60,00</span></figcaption>
-    <p class="preco">R$ 60,00</p>
-    <a href="">Ver produto</a>
-  </figure>
-  </a> */
