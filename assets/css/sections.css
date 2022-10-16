@@ -7,7 +7,9 @@ section.container {
   padding: 16px 8px;
 }
 
-div.star_wars-section {
+div.star_wars-section,
+div.consoles-section,
+div.diversos-section {
   width: 100%;
   height: fit-content;
   flex-wrap: wrap;
