@@ -182,8 +182,10 @@
         <form class="contact-form flex">
           <fieldset  class="flex">
             <legend>Fale conosco <span class="hideVisually">preencha seu nome e sua mensagem</span></legend>
-            <label for="#contactName">Nome</label>
-            <input id="contactName" type="text" placeholder="Digite seu nome aqui">
+            <div class="contactName flex">
+              <label for="#contactName">Nome</label>
+              <input id="contactName" type="text" placeholder="Digite seu nome aqui">
+            </div>
             <label for="#contactMessage">Escreva sua mensagem</label>
             <textarea id="contactMessage" cols="30" rows="10"></textarea>
             <button class="contactSubmit" type="submit">Enviar mensagem</button>
