@@ -1,10 +1,13 @@
 div.sections {
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 360px;
 }
 
 section.container {
   width: 100%;
   padding: 16px 8px;
+  margin: 0 auto;
 }
 
 div.star_wars-section,
@@ -19,6 +22,7 @@ div.verTudo {
   padding: 0 8px;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 div.verTudo h3 {
@@ -69,5 +73,43 @@ figure.product a{
   font-size: 14px;
   line-height: 16px;
   color: #2A7AE4;
+}
+
+@media only screen and (min-width: 720px) {
+  
+  div.sections {
+    max-width: 720px;
+  }
+
+  section.container {
+    padding: 0;
+    margin: 64px auto 0 auto;
+    flex-wrap: nowrap;
+
+  }
+
+   figure.product img {
+    width: 164px;
+  }
+
+  footer.container {
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  div.sections {
+    max-width: 1150px;
+  }
+
+  div.star_wars-section,
+  div.consoles-section,
+  div.diversos-section {
+    flex-wrap: nowrap;
+  }
+
+  figure.product img {
+    width: 176px;
+  }
 }
 

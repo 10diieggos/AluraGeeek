@@ -33,8 +33,12 @@ fetch('./assets/js/banco_dados.json')
 
         for (let i = 4; i < productsElements.length; i = i + 6) {
           productsElements[i].parentElement.classList.add('displayNone')
-          productsElements[i+1].parentElement.classList.add('displayNone')
+          productsElements[i + 1].parentElement.classList.add('displayNone')
         }
+      } else {
+        productsElements.forEach(element => {
+          element.parentElement.classList.remove('displayNone')
+        })
       }
     }
 
@@ -42,7 +46,7 @@ fetch('./assets/js/banco_dados.json')
     media_max_800(query_max_800)
     query_max_800.addEventListener('change', media_max_800)
 
-    function media_min_801(media) {
+/*    function media_min_801(media) {
       if (query_min_801.matches) {
         // if screen size is larger than 800px
         productsElements.forEach(element => {
@@ -53,6 +57,6 @@ fetch('./assets/js/banco_dados.json')
 
     var query_min_801 = window.matchMedia("(min-width: 801px)")
     media_min_801(query_min_801)
-    query_min_801.addEventListener('change', media_min_801)
+    query_min_801.addEventListener('change', media_min_801) */
   });
 
