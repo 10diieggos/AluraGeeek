@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-  </style>
   <title>Login Alura Geek</title>
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
@@ -24,10 +21,11 @@
         <div class="login_section"></div>
       </div>
     </main>
-    <footer>
-      <div class="conteudo_footer">
-        <div class="esquerda">
-          <img class="logo" src="./assets/img/Logo.svg" alt="logo da Alura Geek">
+    <footer class="container">
+      <div class="footer flex">
+        <div class="logo-nav flex">
+          <h3 class="hideVisually">Menu de Navegação no rodapé</h3>
+          <img class="logo-footer" src="./assets/img/Logo.svg" alt="logo Alura Geek"></img>
           <ul class="nav-footer flex">
             <li class="nav-footer-item">Quem somos nós</li>
             <li class="nav-footer-item">Política de privacidade</li>
@@ -37,34 +35,26 @@
             <li class="nav-footer-item">Anuncie aqui</li>
           </ul>
         </div>
-        <form class="contactForm">
-          <fieldset class="contactFieldset">
-            <legend class="contactLegend">Fale Conosco</legend>
-            <div class="inputBlocks">
-              <div class="inputNameBlock">
-                <div class="inputNameBox">
-                  <div class="inputNameElements">
-                    <div class="inputNameTexts">
-                      <label for="" class="inputNameLabel">Nome</label>
-                      <input type="text" class="nameInputField">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="inputMessageBlock">
-                <div class="inputMessageBox">
-                  <div class="inputMessageElements"></div>
-                  <label for="" class="inputMessageLabel">Escreva sua mensagem</label>
-                  <input class="messageInputField" type="text">
-                </div>
-              </div>
-              <button class="contactButtonSubmit" type="submit">Enviar mensagem</button>
+        <form class="contact-form flex">
+          <fieldset  class="flex">
+            <legend>Fale conosco <span class="hideVisually">preencha seu nome e sua mensagem</span></legend>
+            <div class="contactName flex">
+              <label for="#contactName">Nome</label>
+              <input id="contactName" type="text" placeholder="Digite seu nome aqui">
             </div>
-
+            <div class="contactMessage flex">
+              <label for="#contactMessage">Escreva sua mensagem</label>
+              <textarea id="contactMessage"></textarea>
+            </div>
+            <button class="contactSubmit" type="submit">Enviar mensagem</button>
           </fieldset>
         </form>
       </div>
     </footer>
+    <div class="poweredBy">
+      <p>Desenvolvido por Diego Richard Lemos</p>
+      <p>2022</p>
+    </div>
   </div>
 </body>
 </html>
