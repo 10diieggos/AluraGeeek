@@ -55,11 +55,11 @@ header .search-button {
   }
 
   header .container {
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   div.logo_search-bar {
-    width: 100%;
+    width: 50%;
     justify-content: start;
     align-items: center;
     margin-left: 10%;
