@@ -3,9 +3,10 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
+
 :root {
   --white-100: #FFFFFF;
-  --black-05: ##F5F5F5;
+  --black-05: #F5F5F5;
   --black-50: #A2A2A2;
   --black-100: #464646;
   --blue-50: #EAF2FD;
@@ -37,7 +38,7 @@ a {
 
 *::placeholder {
   opacity: 1;
-  color: #A2A2A2;
+  color: var(--black-50);
 }
 
 .flex {
@@ -49,4 +50,3 @@ a {
   min-width: 360px;
   margin: auto;
 }
-

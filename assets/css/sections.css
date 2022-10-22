@@ -31,17 +31,17 @@ div.verTudo h3 {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #464646;
+  color: var(--black-100);
 }
 
 div.verTudo a {
-padding-right: 20px;
-font-weight: 700;
-font-size: 14px;
-color: #2A7AE4;
-background-image: url('../img/blue_arrow.svg');
-background-repeat: no-repeat;
-background-position: right top;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--blue-100);
+  background-image: url('../img/blue_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 figure.product {
@@ -56,7 +56,7 @@ figure.product figcaption {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #464646;
+  color: var(--black-100);
   margin-top: 8px;
 }
 
@@ -64,19 +64,19 @@ p.preco {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #464646;
+  color: var(--black-100);
   margin: 8px 0;
 }
 
-figure.product a{
+figure.product a {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #2A7AE4;
+  color: var(--blue-100);
 }
 
 @media only screen and (min-width: 720px) {
-  
+
   div.sections {
     max-width: 720px;
   }
@@ -88,7 +88,7 @@ figure.product a{
 
   }
 
-   figure.product img {
+  figure.product img {
     width: 164px;
   }
 
@@ -112,4 +112,3 @@ figure.product a{
     width: 176px;
   }
 }
-

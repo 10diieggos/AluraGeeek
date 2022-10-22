@@ -1,6 +1,7 @@
 div.banner {
   position: relative;
 }
+
 .banner-image {
   width: 100%;
   height: auto;
@@ -36,8 +37,8 @@ div.banner {
   padding: 12px 16px;
   width: 119px;
   height: 40px;
-  background: #2A7AE4;
-  color: #ffffff;
+  background: var(--blue-100);
+  color: var(--white-100);
 }
 
 @media only screen and (min-width: 768px) {
@@ -54,7 +55,7 @@ div.banner {
     line-height: 61px;
     margin-bottom: 16px;
   }
-  
+
   .text-banner h2 {
     width: 704px;
     height: 26px;
@@ -73,9 +74,9 @@ div.banner {
 
   .text-banner h1 {
     width: 751px;
-    height: 61px;    
+    height: 61px;
   }
-  
+
   .text-banner h2 {
     width: 704px;
     height: 26px;
