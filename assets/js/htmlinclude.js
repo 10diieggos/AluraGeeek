@@ -11,8 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
   function load_file(filename, callback) {
-    fetch(filename).then(response => response.text()).then(text => callback(text));
+    fetch(filename).then(response => response.text()).then(text => callback(text))
+      .then(() => {document.dispatchEvent(includeEvent)})
   }
+
+  const includeEvent = new Event('includeEvent', {
+    bubbles: true,
+    cancelable: true,
+    composed: false
+  })
+/*   setTimeout(() => {
+    let loginButton = document.querySelector('header .login-link')
+    console.log(loginButton)
+  }, 200) */
 });
 
 /* https://devdojo.com/tnylea/include-html-inside-of-html */
